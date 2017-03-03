@@ -1,0 +1,43 @@
+body {
+	background-color: #eee;
+}
+
+.container {
+	margin: auto;
+	width: 470px;
+	background-color: #fff;
+	box-shadow:  0 0 7px  #aaa7a7;
+		-moz-box-shadow: 0 0 7px  #aaa7a7;
+		-webkit-box-shadow: 0 0 7px  #aaa7a7;
+		-o-box-shadow: 0 0 7px  #aaa7a7;
+	padding: 35px;
+	font-size: 18px;
+}
+
+.userpic img {
+	display: block;
+	margin: auto;
+	width: 250px;
+	height: auto;
+}
+
+.header {
+	text-align: center;
+}
+
+.section {
+	border-bottom: 1px solid #000;
+	padding-left: 25px;
+	margin-bottom: 20px;
+}
+
+.no-border {
+	border-bottom: none;
+}
+
+.list {
+	padding-left: 15px;
+}
+.narrow-text {
+	margin-top: -14px;
+}
