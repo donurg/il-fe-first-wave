@@ -1,10 +1,163 @@
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+/*--GENERAL--*/
+/*--Normalize CSS is used instead of CSS reset--*/
+body {
+	background-color: #f9f9f9;
+	font-family: "Open Sans", sans-serif;
 }
 
-.nav-menu li{
-	display: inline;
-	padding: 20px;
+.link {
+	text-decoration: none;	
 }
+
+.list--unstyled {
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+}
+
+.wrapper {
+	display: block;
+	margin: auto;
+	width: 60%;
+	background-color: #fff;
+	padding: 40px;		
+}
+
+.wrapper--separated {
+	margin-top: 20px;
+}
+
+/*--NAVIGATION--*/
+.nav {
+	background-color: #525151;
+}
+
+.nav__item {
+	padding: 10px 20px;
+	margin-right: 40px;
+}
+
+.nav__item--border {
+	border-left: 1px solid #525151;
+	border-right: 1px solid #525151;		
+}
+
+.nav__item--border:hover {
+	background-color: #3f3f3f;
+	border-left: 1px solid #f9f9f9;
+	border-right: 1px solid #f9f9f9;
+}
+
+.nav__item--float {
+	float: left;
+}
+
+.nav--flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;	
+}
+
+.nav__item--inline {
+	display: inline-block;
+	margin-right: 36px;
+}
+
+.nav__link {
+	color: #fff;		
+}
+
+/*--SIDEBAR--*/
+.sidebar {
+	width: 25%;
+	float: left;
+	margin: 20px 20px 20px 0;
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;	
+	border: 0 solid #ebebeb;
+	border-width: 0 0 2px 2px;
+}
+
+.sidebar__item {
+	border: 0 solid #ebebeb;
+	border-width: 2px 2px 0 0;
+	padding: 10px 20px;
+}
+
+.sidebar__item:hover {
+	background-color: #ebebeb;
+	padding-left: 30px;
+}
+
+.sidebar__link {
+	color: #000;
+}
+
+/*--CONTENT--*/
+.content {
+	width: 70%;
+	float: right;
+	margin-bottom: 40px;
+}
+
+.image-container {
+	margin: 20px 0 40px 0;
+	border: 2px solid #ebebeb;
+}
+
+.image {
+	display: block;
+	margin: auto;
+}
+
+.description {
+	margin: 20px 0 20px 0;
+	padding-left: 25px;
+	line-height: 150%;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+	color: red;
+}
+
+/*--FOOTER--*/
+.footer {
+	margin-bottom: 80px;	
+}
+
+.footer-nav {
+	width: 70%;
+	float: left;
+	background-color: #e1e1e1;
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.footer__item {
+	border-left: 1px solid #e1e1e1;
+	border-right: 1px solid #e1e1e1;
+}
+
+.footer__link {
+	color: #000;	
+}
+
+.footer__link:hover {
+	text-decoration: underline;
+}
+
+.copyright {
+	width: 30%;	
+	float: right;	
+	text-align: right;
+	padding: 10px 20px;
+	background-color: #e1e1e1;
+	box-sizing: border-box; 
+}
+
+
+
