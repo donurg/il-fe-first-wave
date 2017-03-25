@@ -1,0 +1,141 @@
+<!-- http://jsfiddle.net/leaverou/RtGsM/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="styles3.css">
+	<title>HZ42</title>
+</head>
+<body>
+	<nav class="navbar">
+		<div class="navbar__logo">
+			<img src="logo-hw-4.png" alt="logo">
+		</div>
+		<!-- ↓ hamburger menu on mobile ↓ -->
+		<input type="checkbox" id="menu-toggle" class="navbar__menu-toggle">
+      <label for="menu-toggle" class="navbar__label-toggle"></label>
+    </input>
+		<!-- ↑ hamburger menu on mobile ↑ -->
+		<ul class="navbar__list">
+			<li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
+			<li class="navbar__item"><a href="#" class="navbar__link">Portfolio</a></li>
+			<li class="navbar__item"><a href="#" class="navbar__link">About</a></li>
+			<li class="navbar__item"><a href="#" class="navbar__link">Services</a></li>
+			<li class="navbar__item"><a href="#" class="navbar__link">Projects</a></li>
+			<li class="navbar__item"><a href="#" class="navbar__link">Contacts</a></li>
+		</ul>
+	</nav>
+	
+	<header class="hero">
+		<section class="hero__showcase hero__showcase_positioned">
+			<div class="hero__image-container hero__image-container_right">
+				<img src="hero-image-7.png" alt="webste screenshot" class="hero__image hero__image_right">
+			</div>
+			<div class="hero__image-container hero__image-container_left">
+				<img src="hero-image-8.png" alt="webste screenshot" class="hero__image hero__image_left">
+			</div>
+			<div class="hero__image-container">
+				<img src="hero-image-9.png" alt="webste screenshot" class="hero__image hero__image_center">
+			</div>
+		</section>
+
+		<section class="hero__content hero__content_positioned">
+			<h1 class="hero__header">Lorest Nestro Gravido Forum</h1>
+			<p class="hero__description">Nulla nostrum consectetur accusamus ipsa eius iusto. Voluptates why are you reading this? Doloremque labore debitis Jack Nicholson is not who you think he is, delectus, eligendi ea aspernatur sed molestias!</p>
+			<button type="button" class="button hero__button" onclick="alert('Nothing to see here, move along!')">See More</button>
+		</section>
+	</header>
+
+	<section class="content">
+		
+		<section class="email email_margin-bottom email_shadow">
+			<div class="email__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+			<form action="/action_page.php" class="email__form">
+				<input type="text" name="email" class="email__input" value="Email">
+				<input type="submit" class="button email__button" name="submit" value="Submit" class="email__submit button">
+			</form>
+		</section>
+
+		<section class="cta cta_margin-bottom">
+			<div class="cta__item">
+				<img src="browsers-hw-4.png" alt="icons of browsers" class="cta__icon"></img>
+				<h2 class="cta__heading">Ultrices Lacinia Pulvinar</h2>
+				<p class="cta__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui placeat quasi, perferendis minus recusandae illo deleniti sit dolorem aliquid magni!</p>
+				<button type="button" class="button cta__button" onclick="alert('Nothing to see here, move along!')">See More</button>
+			</div>
+			<div class="cta__item">
+				<img src="shopping-cart-hw-4.png" alt="shopping cart icon" class="cta__icon"></img>
+				<h2 class="cta__heading">Magnus Minima Sed Quia</h2>
+				<p class="cta__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, iste, voluptatem! Est, obcaecati, blanditiis. Est beatae nulla quasi repellat iure?</p>
+				<button type="button" class="button cta__button" onclick="alert('Nothing to see here, move along!')">See More</button>
+			</div>
+			<div class="cta__item">
+				<img src="mouse-hw-4.png" alt="computer mouse icon" class="cta__icon"></img>
+				<h2 class="cta__heading">Ultrices Lacinia Pulvinar</h2>
+				<p class="cta__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio voluptatibus beatae nam quidem ratione necessitatibus ab reiciendis in, perspiciatis exercitationem!</p>
+				<button type="button" class="button cta__button" onclick="alert('Nothing to see here, move along!')">See More</button>
+			</div>
+		</section>
+		<section class="demo demo_margin-bottom">
+			<div class="demo__item">
+				<a href="#">
+					<figure class="demo__img demo__img_1 demo__img-shadow"></figure>
+				</a>
+				<h2 class="demo__heading">Magnust Alecet Fernum</h2>
+				<p class="demo__description">Quia reiciendis soluta recusandae sint praesentium sed voluptatum doloremque inventore explicabo, molestias architecto corporis, enim porro maxime minus. Esse, mollitia minima totam.</p>
+			</div>
+			<div class="demo__item">
+				<a href="#">
+					<figure class="demo__img demo__img_2 demo__img-shadow"></figure>
+				</a>
+				<h2 class="demo__heading">Quia Porro Venium</h2>
+				<p class="demo__description">Soluta qui reiciendis dignissimos repudiandae, omnis pariatur! A qui autem voluptatum incidunt explicabo ab sapiente minima. Soluta nobis ab, saepe magnam debitis!</p>
+			</div>
+			<div class="demo__item">
+				<a href="#">
+					<figure class="demo__img demo__img_3 demo__img-shadow"></figure>
+				</a>
+				<h2 class="demo__heading">Dolores Nuruwam Et Lobiare</h2>
+				<p class="demo__description">Atque distinctio rerum, voluptates repudiandae quas ex esse quo, at, maiores consequuntur ab error officia vero amet vitae dolores pariatur dolorum fugit.</p>
+			</div>
+		</section>
+	</section>
+	
+	<footer class="footer">
+		<section class="about-us footer__item">
+			<h2 class="footer__heading">About Us</h2>
+			<hr class="footer__hr">
+			<p class="footer__description">Ratione suscipit similique esse facere culpa reprehenderit provident consequuntur archite Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, pariatur! Cto reiciendis possimus.</p>
+			<p class="footer__description">A, ipsam, earum. Deserunt explicabo libero eaque doloribus mollitia earum quae itaque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, facilis.</p>
+			<button class="button footer__button">More</button>
+		</section>
+
+		<section class="quick-links footer__item">
+			<h2 class="footer__heading">Quick Links</h2>
+			<hr class="footer__hr">
+			<ul class="footer__list">
+				<li class="footer__list-item"><a href="#" class="footer__link">Some Menu Link 1</a></li>
+				<li class="footer__list-item"><a href="#" class="footer__link">Some Menu Link 2</a></li>
+				<li class="footer__list-item"><a href="#" class="footer__link">Some Menu Link 3</a></li>
+				<li class="footer__list-item"><a href="#" class="footer__link">Some Menu Link 4</a></li>
+				<li class="footer__list-item"><a href="#" class="footer__link">Some Menu Link 5</a></li>
+				<li class="footer__list-item"><a href="#" class="footer__link">Some Menu Link 6</a></li>
+			</ul>
+		</section>
+
+		<section class="contact-us footer__item">
+			<h2 class="footer__heading">Contact Us</h2>
+			<hr class="footer__hr">
+			<from class="footer__form">
+				<input class="footer__input" type="text" name="name" value="Name">
+				<input class="footer__input" type="text" name="email" value="Email">
+				<textarea class="footer__input" name="Message" id="" cols="30" rows="4">Your Message</textarea>
+				<input type="submit" class="button footer__button" name="submit" value="Submit">
+			</from>
+		</section>
+	</footer>
+	<section class="copyright">&copy; 2011 PSD Style All Right Reserved
+	</section>
+</body>
+</html>
