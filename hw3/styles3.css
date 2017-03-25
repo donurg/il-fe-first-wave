@@ -7,10 +7,6 @@
 		background: -o-linear-gradient(#545454, #050505);
 		background: -moz-linear-gradient(#545454, #050505);	  
 }
-/*.navbar {
-	width: 100%;		
-}*/
-
 
 .navbar__logo {
 	display: inline-block;
@@ -50,7 +46,7 @@
 
 .hero {
 	padding: 30px 10%;
-  background-image: url("background-blur-hw-4.png");
+  background-image: url("assets/background-blur-hw-4.png");
   background-size: cover;
   background-color: #cccccc;
   display: flex;
@@ -59,7 +55,6 @@
 }
 
 .hero__showcase {
-	margin-top: 30px;
 	float: left;	
 	width: 55%;
 	margin-bottom: 20px;
@@ -70,13 +65,8 @@
 .hero__image_left {
 	position: absolute;
 	left: 0;
-	top: 15%;
-	height: 90%;
-	z-index: 0;	
-	transform: perspective(1000px) rotateY(20deg);
-		-webkit-transform: perspective(1000px) rotateY(20deg);
-		-moz-transform: perspective(1000px) rotateY(20deg);
-		-o-transform: perspective(1000px) rotateY(20deg);
+	top: 20%;
+	z-index: 0;
 }
 
 .hero__image_right {
@@ -84,10 +74,6 @@
 	top: 5%;
 	right: 0;
 	z-index: 0;
-	transform: perspective(1000px) rotateY(325deg);
-		-webkit-transform: perspective(1000px) rotateY(325deg);
-		-moz-transform: perspective(1000px) rotateY(325deg);
-		-o-transform: perspective(1000px) rotateY(325deg);
 }
 
 .hero__image_center {
@@ -102,15 +88,15 @@
 		-o-transform: translateX(-50%);
 }
 
-.hero__image {	
+/*.hero__image {	
 	-webkit-box-reflect: below 3px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(90%, transparent), to(#fff));
 	box-shadow: 0 0 25px #000
-}
+}*/
 
 .hero__content {
 	color: #fff;
 	width: 40%;
-	min-height: 300px;
+	min-height: 250px;
 	margin-bottom: 20px;
 	position: relative;
 	text-align: justify;	
@@ -131,12 +117,20 @@
 	font-size: 150%;
 	line-height: 200%;
 	background-color: #519CCA;
-
 	color: inherit;
 	position: absolute;
 	left: 50%;
 	transform: translateX(-50%);	
 	bottom: 5px;
+}
+
+.button:hover {
+	transition: background 0.5s ease;
+}
+
+.hero__button:hover,
+.email__button:hover {
+	background-color: #3891c7;
 }
 
 .content {
@@ -208,8 +202,7 @@
 	flex-wrap: wrap;
 }
 
-.cta_margin-bottom,
-.demo_margin-bottom {
+.cta_margin-bottom {
 	margin-bottom: 80px;
 }
 
@@ -239,7 +232,14 @@
 		background: -webkit-linear-gradient(#fafafa, #e1e1e1);
     background: -o-linear-gradient(#fafafa, #e1e1e1);
     background: -moz-linear-gradient(#fafafa, #e1e1e1);
+}
 
+.cta__button:hover {
+	background: #fafafa;
+		 background: linear-gradient(#e1e1e1, #fafafa);		
+		background: -webkit-linear-gradient(#e1e1e1, #fafafa);
+    background: -o-linear-gradient(#e1e1e1, #fafafa);
+    background: -moz-linear-gradient(#e1e1e1, #fafafa);
 }
 
 .demo__img {
@@ -258,13 +258,13 @@
 }
 
 .demo__img_1 {
-	background-image: url("cta-icon-1.png");
+	background-image: url("assets/cta-icon-1.png");
 }
 .demo__img_2 {
-	background-image: url("cta-icon-2.png");
+	background-image: url("assets/cta-icon-2.png");
 }
 .demo__img_3 {
-	background-image: url("cta-icon-3.png");
+	background-image: url("assets/cta-icon-3.png");
 }
 
 .demo__img-shadow::before, 
@@ -324,8 +324,16 @@
 	left: 0;
 }
 
+.footer__button:hover {
+	background-color: #1C8BD2;
+	background: linear-gradient(#1356AC, #1C8BD2);
+	 	background: -webkit-linear-gradient(#1356AC, #1C8BD2);
+		background: -o-linear-gradient(#1356AC, #1C8BD2);
+		background: -moz-linear-gradient(#1356AC, #1C8BD2);
+}
+
 .footer__list-item {
-	list-style-image: url('arrow-hw-4.png');
+	list-style-image: url('assets/arrow-hw-4.png');
 	padding-bottom: 15px;
 }
 
