@@ -3,19 +3,23 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">	
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-	<link rel="stylesheet" type="text/css" href="styles3.css">
+	<link rel="stylesheet" type="text/css" href="styles3.css">	
+	<link rel="stylesheet" type="text/css"  href="styles-mobile.css" media="(max-device-width: 860px)">
+
 	<title>HZ42</title>
 </head>
 <body>
-	<nav class="navbar">
+	<header class="navbar">
 		<div class="navbar__logo">
 			<img src="assets/logo-hw-4.png" alt="logo">
 		</div>
 		<!-- ↓ hamburger menu on mobile ↓ -->
 		<input type="checkbox" id="menu-toggle" class="navbar__menu-toggle">
-      <label for="menu-toggle" class="navbar__label-toggle"></label>
-    </input>
+			<i class="fa fa-bars" aria-hidden="true"></i>
+			<label for="menu-toggle" class="navbar__label-toggle"></label>
+		</input>
 		<!-- ↑ hamburger menu on mobile ↑ -->
 		<ul class="navbar__list">
 			<li class="navbar__item"><a href="#" class="navbar__link">Home</a></li>
@@ -25,34 +29,28 @@
 			<li class="navbar__item"><a href="#" class="navbar__link">Projects</a></li>
 			<li class="navbar__item"><a href="#" class="navbar__link">Contacts</a></li>
 		</ul>
-	</nav>
-	
-	<header class="hero">
-		<section class="hero__showcase hero__showcase_positioned">
-<!-- 			<div class="hero__image-container hero__image-container_right"> -->
-				<img src="assets/banner-3.png" alt="webste screenshot" class="hero__image hero__image_right">
-<!-- 			</div> -->
-<!-- 			<div class="hero__image-container hero__image-container_left"> -->
-				<img src="assets/banner-2.png" alt="webste screenshot" class="hero__image hero__image_left">
-<!-- 			</div> -->
-<!-- 			<div class="hero__image-container"> -->
-				<img src="assets/banner-1.png" alt="webste screenshot" class="hero__image hero__image_center">
-<!-- 			</div> -->
-		</section>
-
-		<section class="hero__content hero__content_positioned">
-			<h1 class="hero__header">Lorest Nestro Gravido Forum</h1>
-			<p class="hero__description">Nulla nostrum consectetur accusamus ipsa eius iusto. Voluptates why are you reading this? Doloremque labore debitis Jack Nicholson is not who you think he is, delectus, eligendi ea aspernatur sed molestias!</p>
-			<button type="button" class="button hero__button" onclick="alert('Nothing to see here, move along!')">See More</button>
-		</section>
 	</header>
+	
+	<section class="banner">
+		<section class="banner__showcase banner__showcase_positioned">
+				<img src="assets/banner-3.png" alt="webste screenshot" class="banner__image banner__image_right">
+				<img src="assets/banner-2.png" alt="webste screenshot" class="banner__image banner__image_left">
+				<img src="assets/banner-1.png" alt="webste screenshot" class="banner__image banner__image_center">
+		</section>
 
-	<section class="content">
+		<section class="banner__content banner__content_positioned">
+			<h1 class="banner__header">Lorest Nestro Gravido Forum</h1>
+			<p class="banner__description">Nulla nostrum consectetur accusamus ipsa eius iusto. Voluptates why are you reading this? Doloremque labore debitis Jack Nicholson is not who you think he is, delectus, eligendi ea aspernatur sed molestias!</p>
+			<button type="button" class="button banner__button" onclick="alert('Nothing to see here, move along!')">See More</button>
+		</section>
+	</section>
+
+	<main class="content">
 		
 		<section class="email email_margin-bottom email_shadow">
 			<div class="email__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
 			<form action="" class="email__form">
-				<input type="text" name="email" class="email__input" value="Email">
+				<input type="text" name="email" class="email__input" placeholder="Email">
 				<input type="submit" class="button email__button" name="submit" value="Submit" class="email__submit button">
 			</form>
 		</section>
@@ -100,12 +98,11 @@
 				<p class="demo__description">Atque distinctio rerum, voluptates repudiandae quas ex esse quo, at, maiores consequuntur ab error officia vero amet vitae dolores pariatur dolorum fugit.</p>
 			</div>
 		</section>
-	</section>
+	</main>
 	
 	<footer class="footer">
 		<section class="about-us footer__item">
 			<h2 class="footer__heading">About Us</h2>
-			<hr class="footer__hr">
 			<p class="footer__description">Ratione suscipit similique esse facere culpa reprehenderit provident consequuntur archite Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, pariatur! Cto reiciendis possimus.</p>
 			<p class="footer__description">A, ipsam, earum. Deserunt explicabo libero eaque doloribus mollitia earum quae itaque? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, facilis.</p>
 			<button class="button footer__button">More</button>
@@ -113,7 +110,6 @@
 
 		<section class="quick-links footer__item">
 			<h2 class="footer__heading">Quick Links</h2>
-			<hr class="footer__hr">
 			<ul class="footer__list">
 				<li class="footer__list-item"><a href="#" class="footer__link">Some Menu Link 1</a></li>
 				<li class="footer__list-item"><a href="#" class="footer__link">Some Menu Link 2</a></li>
@@ -126,7 +122,6 @@
 
 		<section class="contact-us footer__item">
 			<h2 class="footer__heading">Contact Us</h2>
-			<hr class="footer__hr">
 			<from class="footer__form">
 				<input class="footer__input" type="text" name="name" placeholder="Name">
 				<input class="footer__input" type="text" name="email" placeholder="Email">
