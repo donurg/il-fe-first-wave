@@ -1,0 +1,13 @@
+	.header,
+	.banner,
+	.nav,
+	.main {
+		width: 100%;
+		margin: 0;
+		box-shadow: none;
+	}
+
+	.background::before,
+	.background::after {
+		display: none;
+	}
