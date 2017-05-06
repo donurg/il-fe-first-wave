@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lesson8 Operators</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var a = 2; 
+		var x = 1 + (a *= 2);
+
+		var div = document.createElement("div");
+		var body = document.getElementsByTagName("body")[0];
+
+		console.log(x === 5) // true;
+		div.innerHTML = "<p>x = 1 + (a *= 2);</p><p>x === 5</p>";
+		body.appendChild(div);
+	</script>
+</body>
+</html>

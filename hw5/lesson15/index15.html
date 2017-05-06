@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson 15 – Loops</title>
+</head>
+<body>
+	<h2>Task 1</h2>
+	<pre>
+		var i = 3;
+
+		while (i) {
+		alert( i-- );
+		} // 1
+	</pre>
+
+	<h2>Task 2</h2>
+	<h3>Prefix</h3>
+	<pre>
+		var i = 0;
+		while (++i < 5) alert( i ); // 1, 2, 3, 4
+	</pre>
+	<h3>Postfix</h3>
+	<pre>
+		var i = 0;
+		while (i++ < 5) alert( i ); // 1, 2, 3, 4, 5
+	</pre>
+
+	<h2>Task 3</h2>
+	<h3>Prefix</h3>
+	<pre>
+		for (var i = 0; i < 5; ++i) alert( i ); // 0, 1, 2, 3, 4
+	</pre>
+	<h3>Postfix</h3>
+	<pre>
+		for (var i = 0; i < 5; i++) alert( i ); // 0, 1, 2, 3, 4
+	</pre>
+
+	<h2>Task 4</h2>
+	<script>
+		(function(){		
+			for (var i = 2; i <= 10; i++) {
+				if (i % 2 === 0) {
+					alert( i );
+				}
+			}
+		})();
+	</script>
+	<pre>
+		for (var i = 2; i <= 10; i++) {
+			if (i % 2 === 0) {
+				alert( i );
+			}
+		}		
+	</pre>
+
+	<h2>Task 5</h2>
+	<script>
+		(function(){
+			var i = 0;
+			while (i < 3) {
+				alert('номер ' + i + '!' );
+				i++; // or ++1, it doesn't matter here;
+			}
+		})();
+	</script>
+	<pre>
+		var i = 0;
+		while (i < 3) {
+			alert('номер ' + i + '!' );
+			i++; // or ++1, it doesn't matter here;
+		}		
+	</pre>
+	
+	<h2>Task 6</h2>	
+	<script>
+		(function(){
+			var val = 0;
+			while(val <= 100 && val !== null) {
+				val = prompt('Введите число, большее 100', '');
+			}
+		})();
+	</script>
+	<pre>
+		var val = 0;
+		while(val <= 100 && val !== null) {
+			val = prompt('Введите число, большее 100', '');
+		}
+	</pre>
+
+	<h2>Task 7</h2>
+	<script type="text/javascript">
+		function isPrime(num) {
+			for (var i = num - 1; i >= 2; i--) {
+				if (!(num % i)) {
+					return false;
+				}
+			}
+			return true;
+		}
+
+		function alertPrimes(first, last) {
+			for (var i = first; i <= last; i++) {
+				if (isPrime(i)) {
+					alert(i);
+				}
+			}
+		}
+
+		alertPrimes(2, 10);
+	</script>
+
+	<pre>
+		function isPrime(num) {
+			for (var i = num - 1; i >= 2; i--) {
+				if (!(num % i)) {
+					return false;
+				}
+			}
+			return true;
+		}
+
+		function alertPrimes(first, last) {
+			for (var i = first; i <= last; i++) {
+				if (isPrime(i)) {
+					alert(i);
+				}
+			}
+		}
+
+		alertPrimes(2, 10);
+	</pre>
+</body>
+</html>

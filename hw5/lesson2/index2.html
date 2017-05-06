@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson2</title>
+	<script type="text/javascript" src="scripts2.js"></script>
+</head>
+<body>
+	<h2>Case 1:</h2>
+	<p>big.js loads first, small.js loads second</p>
+		<!-- <script src="big.js"></script> 1-->
+		<!-- <script src="small.js"></script> 2-->
+
+	<h2>Case 2:</h2>
+	<p>small.js loads first, big.js loads second</p>
+		<!-- <script async src="big.js"></script> 2-->
+		<!-- <script async src="small.js"></script> 1-->
+	
+	<h2>Case 3:</h2>
+	<p>big.js loads first, small.js loads second</p>
+		<!-- <script defer src="big.js"></script> 1-->
+		<!-- <script defer src="small.js"></script> 2-->
+
+</body>
+</html>

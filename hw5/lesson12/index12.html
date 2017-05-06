@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Lesson 12 – If, '?'</title>
+</head>
+<body>
+	<div>
+		<h2>Задача 1: Выведется ли alert?</h2>
+		<code> 
+		if ("0") {
+			alert( 'Привет' ); 
+		}
+		</code>
+		<p> Да, выведется. В скобах после <code>if</code> — <code>true</code>. </p
+	</div>
+	<script type="text/javascript">
+		//Задача 2
+		(function() {
+			var message = prompt('Каково «официальное» название JavaScript?', '');
+			
+			if (message.toLowerCase() === 'ecmascript') {
+				alert('ты чо такой умный? программист шоле? ану сюда иди!');
+			} else {
+				alert('Не знаете? «ECMAScript»!');
+			}
+		})();
+
+		//Задача 3
+		(function() {
+			var number = prompt('input a number', '');
+			
+			if (number > 0 ) {
+				alert('1');
+			} else if (number < 0) {
+				alert('-1');
+			} else if (number == 0) {
+				alert('0');
+			} else {
+				alert("You didn't input a number");
+			}
+		})();
+
+		//Задача 4
+		(function() {
+			var userName = prompt('Кто пришел?', '');
+			var password;
+
+			if (userName === null || userName === '') {
+				alert('Вход отменён');
+			} else if (userName === 'Админ') {
+				password = prompt('Пароль?');
+
+				if (password === 'Чёрный Властелин') {
+					alert('Добро пожаловать!');
+				} else if (password === null || password === '') {
+					alert('Вход отменен');
+				} else {
+					alert('Пароль неверен');					
+				}
+			} else {
+				alert('Я вас не знаю');
+			}
+		})();
+
+		//Задача 5
+		var result = (a + b < 4) ? 'Мало' : 'Много';
+		
+		//Задача 6
+		var message = (login == 'Вася') ? 'Привет' :
+			(login == 'Директор') ? 'Здравствуйте' :
+			(login == '') ? 'Нет логина' : '';
+	</script>
+</body>
+</html>
