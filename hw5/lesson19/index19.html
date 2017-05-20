@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lesson19: recursion</title>
+</head>
+<body>
+	<script type="text/javascript">
+		//Вычислить сумму чисел до данного
+		function calcProgression(n) {
+			return (1 + n) / 2 * n;
+		}
+
+		function loopProgression(n) {
+			for (var i = n - 1; i > 0; i--) {
+				n += i;
+			}
+			return n;
+		}
+
+		function recurseProgression(n) {
+			return (n === 1) ? n : n + recurseProgression(n - 1);
+		}
+
+		function tailProgression(n) {
+			return (function recourse(a, b) {
+				return (b === 0) ? a : recourse(a + b, b - 1);
+			})(n, n - 1);
+		}
+		// Вычислить факториал
+		function factorialize(n) {
+			return (n <= 0) ? 1 : n * factorialize(n - 1);
+		}
+
+		function factorializeLoop(n) {
+			for (var i = n - 1; i > 0; i--) {
+				n *= i;
+			}
+			return (n > 0) ? n : 1;
+		}
+
+		function factorializeTail(n) {
+			return (n <= 0) ? 1 : (function factorialize(a, b) {
+				return (b === 0) ? a : factorialize(a * b, b - 1);
+			})(n, n - 1);
+		}
+
+		// Числа Фибоначчи
+		function fiboRec(n) {
+			return (n <= 2) ? 1 : fiboRec(n - 1) + fiboRec(n - 2);
+		}
+
+		function fiboTail(n) {
+			return (function inner(a, b, c) {
+				return (c > 1) ? inner(a + b, a, c - 1) : a; 
+			})(1, 0, n);
+		}
+
+		function fiboLoop(n) {
+			var a = 1;
+			var b = 0;
+			var c = 0;
+
+			for (var i = 1; i < n; i++) {
+				c = a + b;
+				b = a;
+				a = c;
+			}
+
+			return c;
+		}
+	</script>
+</body>
+</html>

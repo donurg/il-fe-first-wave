@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Качество Кода</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// Сделать pow по спецификации
+		function pow(x, n) {
+			if (n < 0 || Math.round(n) !== n) return NaN;
+
+			var result = 1;
+			
+			for (var i = 0; i < n; i++) {
+				result *= x;
+			}
+
+			return result;
+		}
+
+		//Добавьте тест к задаче
+		describe("любое число, кроме нуля, в степени 0 равно 1", function() {
+
+			function makeTest(x) {
+				it("при возведении " + x + " в степень 0 результат: 1", function() {
+					assert.equal(pow(x, 0), 1);
+				});
+			}
+
+			for (var x = -5; x <= 5; x += 2) {
+				makeTest(x);
+			}
+
+		});
+
+		it("ноль в нулевой степени даёт NaN", function() {
+			assert.isNaN(pow(0, 0), "0 в степени 0 не NaN");
+		});
+	</script>
+</body>
+</html>
